@@ -7,6 +7,7 @@ A fully serverless resume website built on AWS as part of the [Cloud Resume Chal
 ---
 
 ## Architecture
+
 Browser → CloudFront → S3 (index.html)
 ↓
 JavaScript fetch()
