@@ -8,17 +8,25 @@
 
 ## 🏗️ Architecture
 
-Browser → CloudFront (HTTPS + CDN) → S3 (index.html)
-│
-▼ JavaScript fetch()
-│
+```text
+Browser
+   │
+   ▼
+CloudFront (HTTPS + CDN)
+   │
+   ▼
+S3 (index.html)
+   │
+   ▼ JavaScript fetch()
+   │
 API Gateway
-│
-▼
+   │
+   ▼
 Lambda (Python)
-│
-▼
+   │
+   ▼
 DynamoDB (visitor count)
+```
 
 ---
 
